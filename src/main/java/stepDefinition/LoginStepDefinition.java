@@ -5,8 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import cucumber.api.PendingException;
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import junit.framework.Assert;
 
 public class LoginStepDefinition {
@@ -14,7 +15,7 @@ public class LoginStepDefinition {
 
 @Given("^User launch Browser$")
 public void user_launch_Browser() throws Throwable {
-	  System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver_win32\\chromedriver.exe");
 	  driver= new ChromeDriver();
 	  driver.manage().window().maximize();
 	  
